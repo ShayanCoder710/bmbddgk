@@ -248,8 +248,9 @@ body>div.main div#link .box>.buttons button:hover {
 
 body .c3 {
     position: absolute;
-    left: 0;
-    top: 0;
+    right: 5px;
+    top: 160px;
+    left: auto;
 }
 
 body div#footer {
@@ -279,22 +280,21 @@ body div#footer>div.left p {
     font-family: Vazir, serif;
 }
 
-body div#footer a.github {
+body div#footer a.gitlh {
     text-decoration: none;
     display: flex;
-    margin: 0 8px 0 0;
+    margin: 0 5px 0 0;
     align-items: center;
     opacity: 0.6;
     transition: opacity 0.2s;
 }
 
-body div#footer a.github:hover {
+body div#footer a.gitlh:hover {
     opacity: 1;
 }
 
-body div#footer a.github>img {
+body div#footer a.gitlh>img {
     width: 20px;
-    filter: invert(1);
 }
 
 body div#footer>div.right {
