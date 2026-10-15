@@ -132,13 +132,30 @@ body>div.main>form>div.input-search>input:focus {
     box-shadow: 0 0 0 3px var(--ddg-bg);
 }
 
-body>div.main>form>div.input-search>svg {
+body>div.main>form>div.input-search>button {
     position: absolute;
-    left: 20px;
-    width: 20px;
-    height: 20px;
+    left: 12px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
     color: var(--ddg-text-muted);
-    pointer-events: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+body>div.main>form>div.input-search>button:hover {
+    color: var(--ddg-orange);
+    background-color: rgba(222, 88, 51, 0.1);
+}
+
+body>div.main>form>div.input-search>button svg {
+    width: 18px;
+    height: 18px;
 }
 
 body>div.main>form>div.input-search>img {
@@ -248,9 +265,10 @@ body>div.main div#link .box>.buttons button:hover {
 
 body .c3 {
     position: absolute;
-    right: 5px;
-    top: 160px;
-    left: auto;
+    display: none;
+    z-index: 9999;
+    pointer-events: none;
+    width: 30px;
 }
 
 body div#footer {
