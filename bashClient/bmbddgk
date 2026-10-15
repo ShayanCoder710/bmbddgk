@@ -1,0 +1,5 @@
+#!/bin/bash 
+user_search=$*
+query='https://ShayanCoder710.github.io/bmbddgk/?q='
+generate_search=$( echo "$user_search" | tr ' ' '+' )
+echo "Your Link: " $query$generate_search
